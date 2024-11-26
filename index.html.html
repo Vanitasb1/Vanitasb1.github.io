@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="menu.css" rel="stylesheet">
+        <title>TIGO BOLIVIA</title>
+    </head>
+    <body>
+        <header>
+            <div class="barra">
+                <h2>MENU<img src="17701.png"><h2></h2>
+                <ul>
+                    <li><a href="cinco.html">Servicios</a></li>
+                    <li><a href="cinco.html">matenimieto</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="carousel">
+            <img class="carousel-image" src="c1.png" alt="Image 1">
+            <img class="carousel-image" src="img2.jpg" alt="Image 2">
+            <img class="carousel-image" src="img3.jpg" alt="Image 3">
+        </div>
+    
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel-image');
+    
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.style.display = (i === index) ? 'block' : 'none';
+                });
+            }
+    
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            }
+    
+            showImage(currentIndex);
+            setInterval(nextImage, 3000);
+        </script>
+    <div class="contenedor-horizontal">
+        <div class="seccion">
+            <img src="b1.png" alt="Image 4">
+            <h1> Consulta la mejor velocidad</h1>
+            <p> Medicion de servicio de datos</p>
+            <h1><a href="fer.html">HAZ LA PRUEBA</a></h1>
+        </div>
+        <div class="seccion">
+            <img src="b2.png" alt="Image 5">
+            <h1> Estamos comprometidos</h1>
+            <p> internet responsable</p>
+            <h1><a href="cliente.HTML"> CONOCE MAS</a></h1>
+        </div>
+        <div class="seccion">
+            <img src="b3.png" alt="Image 6">
+            <h1> tu derechos como cliente </h1>
+            <p> Informate legal y regulatoria</p>
+            <h1><a href="derecho.html"> CONOCE MAS</a></h1>
+        </div>
+    </div>
+<footer class="footer">
+<div class="container">
+    <div class="footer-row">
+
+        <div class="footer-links">
+            <h4> Conocenos</h4>
+            <ul>
+                <li><a href="tigo.html">Quien es tigo</a></li>
+                <li><a href="siete.html"> Milicom Internacional</a></li>
+        </div>
+        <div class="footer-links">
+            <h4>Legal y regulatorio</h4>
+            <ul>
+                <li><a href="derecho.html">conoce tus derechos</a></li>
+                <li><a href="ocho.html">Paga tus facturas</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Servicios tigo</h4>
+            <ul>
+                <li><a href="nueve.html"> Mi tigo</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4> Siguenos</h4> 
+            <div class="social-link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-likedin"></i></a>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
+</footer>
+    </body>
+</html>
